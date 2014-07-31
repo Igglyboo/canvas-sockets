@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/reset.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Paint</title>
+</head>
+<body onload="init('drawingArea', 'brush', 'eraser', 'reset', 'save', 'imgHolder')">
+    <div>
+        <canvas id="drawingArea" width="500" height="500"></canvas>
+        <div id="imgHolder"></div>
+    </div>
+    <div id="inputHolder">
+        <input id="brush" type="color" value="#000000">
+        <input id="eraser" type="color" value="#ffffff">
+        <button id="reset">Reset Canvas</button>
+        <button id="save">Save</button>
+    </div>
+    <script type="text/javascript" src="assets/js/paint.js"></script>
+</body>
+</html>
