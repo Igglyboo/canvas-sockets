@@ -1,3 +1,8 @@
 {
-  "name": "socket paint"
+    "name": "socket paint",
+    "dependencies": {
+        "http": "",
+        "socket.io": "",
+        "express": ""
+    }
 }
