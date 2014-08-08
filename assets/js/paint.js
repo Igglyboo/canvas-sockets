@@ -38,12 +38,14 @@ paper.install(window);
 window.onload = function () {
     paper.setup('drawingArea');
     var tool = new Tool();
-    var brush = document.getElementById("brush");
+    var strokeColor = document.getElementById("strokeColor");
+    var strokeWidth = document.getElementById("strokeWidth");
     var path;
 
     tool.onMouseDown = function (event) {
         path = new Path();
-        path.strokeColor = brush.value;
+        path.strokeColor = strokeColor.value;
+        path.strokeWidth = strokeWidth.value;
         path.add(event.point);
     };
 
